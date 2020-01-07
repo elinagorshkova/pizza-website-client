@@ -14,19 +14,23 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700i">
       <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
       <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+      <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+      <link rel="stylesheet" href="assets/css/Footer-Basic.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
       <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
       <link rel="stylesheet" href="assets/css/styles.css">
     </head>
+
     <body>
-        <nav class="navbar navbar-light navbar-expand-md d-flex d-lg-flex justify-content-lg-end align-items-lg-end navigation-clean-search" style="background-color: rgba(255,255,255,0.63);height: 60px;">
-            <div class="container-fluid"><a class="navbar-brand" id="logo" href="#">Pizzaiolo</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-light navbar-expand-md d-flex d-lg-flex flex-column justify-content-center align-items-center justify-content-lg-end align-items-lg-end navigation-clean-search" style="background-color: rgba(255,255,255,0.63);height: 60px;">
+            <div class="container-fluid"><a class="navbar-brand" id="logo" href="./index.html">Pizzaiolo</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav">
                         <li class="nav-item" role="presentation"><a class="nav-link active text-uppercase" href="#">Order Online</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link text-uppercase" href="#">Menu</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link text-uppercase" href="#">About us</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-uppercase" href="./about.html">About us</a></li>
                     </ul>
                     <form class="form-inline mr-auto" target="_self">
                         <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
@@ -34,7 +38,7 @@
             </div>
         </nav>
         <section class="d-flex justify-content-center align-items-center" id="hero">
-            <div class="text-center" id="hero-text" style="padding: 15px;margin-left: 20px;">
+            <div class="text-center with-background" id="hero-text" style="padding: 15px;margin-left: 20px;">
                 <h1 style="font-size: 60px;">Craving a pizza?&nbsp;</h1>
                 <p style="font-size: 28pxpx;">Let us take care of you. Order online and skip the wait.</p><button class="btn btn-primary" id="order-button" type="button">Order Now</button></div>
         </section>
@@ -78,8 +82,44 @@
                 </ol>
             </div>
             </section>
-            <section id="menu"></section>
+            <section class="text-left d-flex justify-content-center align-items-center" id="menu" style="height: 50vh;">
+                <div class="with-background" style="background-color: rgba(255,255,255,0.6);">
+                    <h1 style="font-size: 60px;">Explore our&nbsp;<a href="#" style="color:  rgb(220,66,32);">menu</a></h1>
+                    <p style="width: 500px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </section>
+            <div class="contact-clean" style="background-color: rgb(254,254,254);">
+                <form data-bss-subject="From the website" style="background-color: rgb(220,66,32);border-radius: 30PX;">
+                    <h2 class="text-center" style="color: rgb(255,255,255);">CONTACT US</h2>
+                    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+                    <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+                    <div class="form-group text-center"><button class="btn" id="send" type="submit" style="background-color: rgba(255,255,255,0);">send </button></div>
+                </form>
+            </div>
+            <div class="footer-basic" style="background-color: rgb(220,66,32);color: rgb(255,255,255);">
+              <footer>
+                  <div class="social"> <a target="_blank" href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a>
+                    <a href="https://www.snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a>
+                    <a href="https://twitter.com/ "target="_blank"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+                  </div>
+                  <ul class="list-inline"
+                      style="color: rgb(255,255,255);">
+                      <li class="list-inline-item"><a href="./index.html">Home</a></li>
+                      <li class="list-inline-item"><a href="#">Order online</a></li>
+                      <li class="list-inline-item"><a href="#">Menu</a></li>
+                      <li class="list-inline-item"><a href="./about.html">About us</a></li>
+                      <li class="list-inline-item"><a href="#"></a></li>
+                  </ul>
+                  <p class="copyright" style="color: rgb(255,255,255);">Pizzaiolo © 2020</p>
+              </footer>
+            </div>
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/smart-forms.min.js"></script>
+            <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     </body>
+
 </html>
