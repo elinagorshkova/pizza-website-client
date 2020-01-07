@@ -123,7 +123,12 @@
   background-repeat: no-repeat;
   background-position: right;
   margin-top: -87px;
-  margin-left: -400px;
+  margin-left: 0px;
+}
+@media only screen and (min-width: 768px) {
+  #hero {
+    margin-left: -400px;
+  }
 }
 
 #order-button {
@@ -178,10 +183,9 @@
 }
 
 #menu {
-  background-image: url("../../assets/img/section-background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 78px;
   margin-bottom: 50px;
 }
 
@@ -220,3 +224,22 @@
   height: 50vh;
 }
 
+.menu-tem {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.menu-image {
+  border-radius: 10px;
+}
+
+.menu-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#index-menu {
+  background-image: url("../../assets/img/section-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
